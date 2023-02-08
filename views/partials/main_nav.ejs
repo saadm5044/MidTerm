@@ -1,0 +1,56 @@
+<!--Main Navigation-->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/"><i class="fa-brands fa-2x fa-js"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+
+          <% if (title == "Home") { %>
+          <li class="nav-item active">
+          <% } else { %>
+          <li class="nav-item">
+          <% } %>   
+            <a class="nav-link" aria-current="page" href="/home">Home</a>
+          </li>
+
+          <% if (title == "About") { %>
+          <li class="nav-item active">
+           <% } else {%>
+          <li class="nav-item">
+           <% } %> 
+            <a class="nav-link" href="/about">About</a>
+          </li>
+
+          <% if (title == "Products") { %>
+          <li class="nav-item active">
+           <% } else {%>
+          <li class="nav-item">
+           <% } %> 
+            <a class="nav-link" href="/products">Products</a>
+          </li>
+
+          <% if (title == "Services") { %>
+          <li class="nav-item active">
+           <% } else {%>
+          <li class="nav-item">
+           <% } %> 
+            <a class="nav-link" href="/services">Services</a>
+          </li>
+
+          <% if (title == "Contact") { %>
+          <li class="nav-item active">
+           <% } else {%>
+          <li class="nav-item">
+           <% } %> 
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
