@@ -1,0 +1,41 @@
+<!--File Name: About.ejs
+    Name: Junaid Saad Ahmed
+    Student Id: 301213252
+    Course: COMP-229 Sec.004-->
+
+
+    <%- include('partials/header.ejs') %>
+    
+    <%- include('partials/main_nav.ejs') %>
+
+      <br>
+        <!--Main Content-->
+  <main class="container">
+    <div class="bg-light p-5 rounded">
+      <h1>Welcome to <%= title %> page</h1>
+      <p class="lead"> Welcome to my little world where I am trying to build a website of my own.</p>
+      <a class="btn btn-lg btn-primary" href="/about" role="button">About Me &raquo;</a>
+    </div>
+  </main>
+
+  <center><h2>Introduction</h2></center>
+  <br>
+<img src="/images/profile_pic.jpg" class="profile" alt="picture" width="40%" height="50%"><br><br>
+
+<div id="aboutPara">
+<p> Hello readers! My name is Junaid Saad Ahmed and I am a student of Software Engineering Techinician
+    from Centennial College. I am originally from India. Before coming to Canada, I just completed my High School.
+    Coming to Canada was the biggest step in my life and it changed my life completely. I am fond of playing sports in
+    my free time. The sports that I play are Basketball, Table Tennis, and Football. Coming to the software engineering
+    side, I gained some technical knowledge in few languages such as HTML5, CSS3, JavaScript, Express.js C#, 
+    Linux/Unix and MySQL. I hope to excel in this course and in my future as well. To know me more, please check out
+    my resume attached below.</p>
+    <br>
+    <span class="resumeLink"><a href="/Assets/Resume.docx"><i class="fa-solid fa-download"></i>  Resume.docx</a></span>
+</div><br>
+     
+    
+    
+            <%- include('partials/bottom_nav.ejs') %>
+    
+            <%- include('partials/footer.ejs') %>
